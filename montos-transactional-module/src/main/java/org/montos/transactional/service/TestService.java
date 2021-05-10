@@ -2,6 +2,7 @@ package org.montos.transactional.service;
 
 import org.montos.transactional.dao.TestDao;
 import org.montos.transactional.entity.Test;
+import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,6 +19,11 @@ import java.util.List;
 public class TestService {
     @Autowired
     private TestDao testDao;
+
+
+    public void test(){
+        add();
+    }
 
     @Transactional
     public  void add() {

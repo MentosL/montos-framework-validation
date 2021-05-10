@@ -9,6 +9,8 @@
         <module>montos-jdbcTemplate-module</module>
         <module>montos-scheduled-module</module>
         <module>montos-transactional-module</module>
+        <module>montos-async-module</module>
+        <module>montos-page-module</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -16,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>2.4.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 

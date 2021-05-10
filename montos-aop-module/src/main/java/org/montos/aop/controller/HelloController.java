@@ -1,7 +1,6 @@
 package org.montos.aop.controller;
 
 import org.montos.aop.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,11 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @create 2021/1/26 9:55 下午
  */
 @RestController
-
 public class HelloController {
 
-    @Autowired
-    HelloService helloService;
+    private HelloService helloService;
+
+    public HelloController( HelloService helloService) {
+        this.helloService = helloService;
+    }
 
     @RequestMapping("/api/test")
     public void name(){
