@@ -11,6 +11,7 @@
         <module>montos-transactional-module</module>
         <module>montos-async-module</module>
         <module>montos-page-module</module>
+        <module>montos-pageHelper-module</module>
     </modules>
 
     <packaging>pom</packaging>

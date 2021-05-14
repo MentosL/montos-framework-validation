@@ -35,13 +35,7 @@ public class TestDao {
             map.put("createTime",test.getCreateTime());
             insertMap.add(map);
         }
-
-
         int[] ints = namedParameterJdbcTemplate.batchUpdate(sql, (Map<String, ?>[]) insertMap.toArray(new HashMap[0]));
-
         System.out.println(ints);
     }
-
-
-
 }

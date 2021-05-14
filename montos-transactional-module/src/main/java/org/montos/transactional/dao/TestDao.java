@@ -39,7 +39,7 @@ public class TestDao {
 
         int[] ints = namedParameterJdbcTemplate.batchUpdate(sql, (Map<String, ?>[]) insertMap.toArray(new HashMap[0]));
 
-        System.out.println(ints);
+        System.out.println(ints.length);
     }
 
 

@@ -18,6 +18,6 @@ public class TestController {
 
     @RequestMapping("api/add")
     public  void add(){
-        testService.test();
+        testService.add();
     }
 }
