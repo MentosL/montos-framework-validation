@@ -14,13 +14,20 @@ public class HelloController {
 
     private HelloService helloService;
 
-
     public HelloController(HelloService helloService) {
         this.helloService = helloService;
     }
 
+
+    public static Integer count = 0;
+
     @RequestMapping("hello")
     public void hello(){
-        helloService.sayHello();
+        if (count%2 ==0){
+            helloService.sayHello();
+        }else {
+            helloService.sayHello2();
+        }
+        count++;
     }
 }

@@ -15,4 +15,9 @@ public class HelloService {
     public  void sayHello(){
         System.out.println("hello world");
     }
+
+
+    public void sayHello2(){
+        System.out.println("hello world2");
+    }
 }
