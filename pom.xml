@@ -12,6 +12,7 @@
         <module>montos-async-module</module>
         <module>montos-page-module</module>
         <module>montos-pageHelper-module</module>
+        <module>montos-nacos-module</module>
     </modules>
 
     <packaging>pom</packaging>
