@@ -13,6 +13,9 @@
         <module>montos-page-module</module>
         <module>montos-pageHelper-module</module>
         <module>montos-nacos-module</module>
+        <module>montos-dubbo-provider-module</module>
+        <module>montos-dubbo-consumer-module</module>
+        <module>montos-dubbo-api-module</module>
     </modules>
 
     <packaging>pom</packaging>
