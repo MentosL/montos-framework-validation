@@ -16,6 +16,8 @@
         <module>montos-dubbo-provider-module</module>
         <module>montos-dubbo-consumer-module</module>
         <module>montos-dubbo-api-module</module>
+        <module>montos-metrics-module</module>
+        <module>montos-statemachine-module</module>
     </modules>
 
     <packaging>pom</packaging>
