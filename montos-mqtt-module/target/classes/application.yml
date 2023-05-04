@@ -1,0 +1,19 @@
+spring:
+  #mqtt配置
+  mqtt:
+    send:
+      #完成超时时间
+      completionTimeout: 3000
+      #通过mqtt发送消息验证所需用户名
+      username: test1
+      #通过mqtt发送消息验证所需密码
+      password: test1
+      #连接的mqtt地址
+      url: tcp://127.0.0.1:1883
+      #客户端id
+      clientId: clint1
+      #推送主题  后面跟着#是监控下面所有的话题
+      topic: topic
+      #topic: my-test
+      keepAliveInterval: 20
+      connectionTimeout: 3000

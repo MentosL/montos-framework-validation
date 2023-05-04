@@ -1,9 +1,7 @@
 package org.montos.aop.service;
 
-import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Montos
@@ -12,14 +10,16 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 public class HelloService {
 
+    String name = "";
+    int i =0;
 
-    public void A(String name){
-        System.out.println("a"+name);
-        HelloService o =(HelloService) AopContext.currentProxy();
-        o.B(name);
+
+    public String getName(){
+        i++;
+       return name + i;
     }
 
-    public void B(String name){
-        System.out.println("b"+name);
+    public void setName() {
+        name = "montos";
     }
 }

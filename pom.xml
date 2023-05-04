@@ -18,6 +18,8 @@
         <module>montos-dubbo-api-module</module>
         <module>montos-metrics-module</module>
         <module>montos-statemachine-module</module>
+        <module>montos-tkmybatis-module</module>
+        <module>montos-mqtt-module</module>
     </modules>
 
     <packaging>pom</packaging>
