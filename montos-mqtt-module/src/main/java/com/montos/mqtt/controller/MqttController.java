@@ -37,7 +37,7 @@ public class MqttController {
     @ResponseBody
     @RequestMapping("/sendToTopic")
     private ResponseEntity<String> sendToTopic(){
-        String topic = "sharjeck/ai/test/out";
+        String topic = "topic";
         String data = "这是出的主题";
         mqSendMessageGateWay.sendToMqtt(topic,data);
         return new ResponseEntity<>("OK", HttpStatus.OK);

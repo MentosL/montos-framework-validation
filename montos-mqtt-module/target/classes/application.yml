@@ -17,3 +17,6 @@ spring:
       #topic: my-test
       keepAliveInterval: 20
       connectionTimeout: 3000
+
+server:
+  port: 6666
