@@ -20,6 +20,8 @@
         <module>montos-statemachine-module</module>
         <module>montos-tkmybatis-module</module>
         <module>montos-mqtt-module</module>
+        <module>montos-http-module</module>
+        <module>montos-groovy-module</module>
     </modules>
 
     <packaging>pom</packaging>
