@@ -18,7 +18,7 @@ public class GroovyController {
         //装载解析脚本代码
         Script scriptBean = groovyShell.parse(groovyRequest.getScript());
         //执行
-        Object obj = scriptBean.invokeMethod(groovyRequest.getMethod(), null);
-        return obj.toString();
+        scriptBean.invokeMethod(groovyRequest.getMethod(), groovyRequest.getArgs());
+        return "ok";
     }
 }

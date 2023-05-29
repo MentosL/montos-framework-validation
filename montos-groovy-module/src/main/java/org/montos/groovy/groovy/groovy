@@ -11,7 +11,11 @@ class Globals {
     static int[] arrayList = [1, 2]
 }
 
-def getBean() {
+def getBean(int temp) {
     GroovyTestService groovyTestService = SpringContextUtil.getBean(GroovyTestService.class);
-    groovyTestService.test()
+    if(temp == 1){
+        groovyTestService.test1();
+    }else{
+        groovyTestService.test2();
+    }
 }

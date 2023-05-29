@@ -1,0 +1,9 @@
+```java
+curl --location --request POST 'http://127.0.0.1:8080/groovy/test' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "script":"package groovy \n import org.montos.groovy.service.GroovyTestService \n import org.montos.groovy.config.SpringContextUtil \n class Globals {\n static String PARAM1 = \"静态变量\"\n static int[] arrayList = [1, 2] \n }\n def getBean(int temp) {\n GroovyTestService groovyTestService = SpringContextUtil.getBean(GroovyTestService.class);\n if(temp == 1){\n groovyTestService.test1();\n }else{\n groovyTestService.test2();\n }\n }",
+    "method":"getBean",
+    "args":2
+}'
+```
